@@ -54,5 +54,5 @@ jobs:
       - name: Expose as artifact
         uses: actions/upload-artifact@v2
         with:
-          name: build/app/outputs/flutter-apk/app-release.apk
-          path: build/app/outputs/flutter-apk/app-release.apk
+          name: "/build/app/outputs/flutter-apk/app-release.apk"
+          path: "/build/app/outputs/flutter-apk/app-release.apk"
