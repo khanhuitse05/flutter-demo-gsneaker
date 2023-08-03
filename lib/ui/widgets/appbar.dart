@@ -8,11 +8,11 @@ class XAppbar extends StatelessWidget {
     Key? key,
     this.action,
     required this.title,
-    this.suptitle,
+    this.supTitle,
   }) : super(key: key);
   final Widget? action;
   final String title;
-  final Widget? suptitle;
+  final Widget? supTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -51,7 +51,7 @@ class XAppbar extends StatelessWidget {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              if (suptitle != null) suptitle!,
+              if (supTitle != null) supTitle!,
             ],
           ),
         ],

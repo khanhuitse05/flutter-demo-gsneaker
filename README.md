@@ -1,8 +1,8 @@
 # G-Sneaker
 
 - https://github.com/GoldenOwlAsia/webdev-intern-assignment
-- [Live Demo](https://golden-shoe-live-example.herokuapp.com/)
-
+// TODO: add record screen here
+- [Live Demo]()
 ![Screenshot](resources/screenshot.jpeg)
 
 # Requirements

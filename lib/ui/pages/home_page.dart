@@ -1,10 +1,10 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
-import 'package:app/ui/wigets/background.dart';
-import 'package:app/ui/wigets/home/cart_button.dart';
+import 'package:app/ui/widgets/background.dart';
+import 'package:app/ui/widgets/home/cart_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:app/cubit/products/product_cubit.dart';
-import 'package:app/ui/wigets/home/item_home_widget.dart';
+import 'package:app/ui/widgets/home/item_home_widget.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);

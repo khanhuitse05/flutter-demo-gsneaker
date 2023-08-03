@@ -3,7 +3,7 @@ import 'package:app/utils/fonts.dart';
 import 'package:app/routers/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:app/model/shoes.dart';
-import 'package:app/ui/wigets/your_cart/buttons_widget.dart';
+import 'package:app/ui/widgets/your_cart/buttons_widget.dart';
 import 'package:app/utils/colors.dart';
 import 'package:app/utils/images.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,4 +1,4 @@
-import 'package:app/ui/wigets/appbar.dart';
+import 'package:app/ui/widgets/appbar.dart';
 import 'package:app/utils/colors.dart';
 import 'package:flutter/material.dart';
 
@@ -30,13 +30,13 @@ class XLayout extends StatelessWidget {
     required this.child,
     Key? key,
     this.action,
-    this.suptitle,
+    this.supTitle,
     required this.title,
   }) : super(key: key);
   final Widget child;
   final Widget? action;
   final String title;
-  final Widget? suptitle;
+  final Widget? supTitle;
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +48,7 @@ class XLayout extends StatelessWidget {
             children: [
               XAppbar(
                 title: title,
-                suptitle: suptitle,
+                supTitle: supTitle,
                 action: action,
               ),
               Expanded(child: child),

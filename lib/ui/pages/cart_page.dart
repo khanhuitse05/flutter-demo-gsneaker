@@ -1,8 +1,8 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
 import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
-import 'package:app/ui/wigets/background.dart';
-import 'package:app/ui/wigets/your_cart/item_cart_widget.dart';
+import 'package:app/ui/widgets/background.dart';
+import 'package:app/ui/widgets/your_cart/item_cart_widget.dart';
 import 'package:app/utils/colors.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -14,7 +14,7 @@ class CartPage extends StatelessWidget {
     return BlocBuilder<CartCubit, CartState>(builder: (context, state) {
       return XLayout(
           title: 'Your Cart',
-          suptitle: Text(
+          supTitle: Text(
             state.totalPrice <= 0.0
                 ? "\$0.00"
                 : "\$${double.parse(state.totalPrice.toStringAsFixed(2))}",

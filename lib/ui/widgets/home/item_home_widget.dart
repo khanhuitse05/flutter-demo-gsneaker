@@ -1,10 +1,10 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
-import 'package:app/ui/wigets/home/item_image.dart';
+import 'package:app/ui/widgets/home/item_image.dart';
 import 'package:app/utils/fonts.dart';
 import 'package:app/routers/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:app/model/shoes.dart';
-import 'package:app/ui/wigets/home/add_button.dart';
+import 'package:app/ui/widgets/home/add_button.dart';
 import 'package:app/utils/colors.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -39,7 +39,7 @@ class ItemHomeWidget extends StatelessWidget {
               const SizedBox(height: 16),
               _title(context, title: item.name),
               const SizedBox(height: 8),
-              _description(context, descrip: item.description),
+              _description(context, description: item.description),
               const SizedBox(height: 8),
               _bottom(context, isOn: isOn),
               const SizedBox(height: 8),
@@ -84,9 +84,9 @@ class ItemHomeWidget extends StatelessWidget {
     );
   }
 
-  Widget _description(BuildContext context, {String? descrip}) {
+  Widget _description(BuildContext context, {String? description}) {
     return Text(
-      descrip!,
+      description!,
       style: const TextStyle(
         color: XColors.greyColor,
         fontSize: 14,

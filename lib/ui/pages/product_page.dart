@@ -1,9 +1,9 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
 import 'package:app/model/shoes.dart';
-import 'package:app/ui/wigets/background.dart';
-import 'package:app/ui/wigets/home/add_button.dart';
-import 'package:app/ui/wigets/home/cart_button.dart';
-import 'package:app/ui/wigets/home/item_image.dart';
+import 'package:app/ui/widgets/background.dart';
+import 'package:app/ui/widgets/home/add_button.dart';
+import 'package:app/ui/widgets/home/cart_button.dart';
+import 'package:app/ui/widgets/home/item_image.dart';
 import 'package:app/utils/colors.dart';
 import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,7 @@ class ProductPage extends StatelessWidget {
               const SizedBox(height: 16),
               _price(context, price: item.price),
               const SizedBox(height: 8),
-              _description(context, descrip: item.description),
+              _description(context, description: item.description),
               const SizedBox(height: 24),
               _bottom(context, isOn: isOn),
               const SizedBox(height: 8),
@@ -67,9 +67,9 @@ class ProductPage extends StatelessWidget {
     );
   }
 
-  Widget _description(BuildContext context, {String? descrip}) {
+  Widget _description(BuildContext context, {String? description}) {
     return Text(
-      descrip!,
+      description ?? '',
       style: const TextStyle(
         color: XColors.greyColor,
         fontSize: 14,
