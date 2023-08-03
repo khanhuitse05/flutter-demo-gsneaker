@@ -1,6 +1,5 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
 import 'package:app/ui/widgets/home/item_image.dart';
-import 'package:app/utils/fonts.dart';
 import 'package:app/routers/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:app/model/shoes.dart';
@@ -57,7 +56,6 @@ class ItemHomeWidget extends StatelessWidget {
           child: Text(
             "\$${item.price}",
             style: const TextStyle(
-                fontFamily: XFonts.rubik,
                 color: XColors.blackColor,
                 fontSize: 22,
                 fontWeight: FontWeight.bold),
@@ -76,7 +74,6 @@ class ItemHomeWidget extends StatelessWidget {
     return Text(
       title!,
       style: const TextStyle(
-        fontFamily: XFonts.rubik,
         color: XColors.blackColor,
         fontSize: 22,
         fontWeight: FontWeight.bold,

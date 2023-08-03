@@ -1,5 +1,4 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
-import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:app/ui/widgets/background.dart';
 import 'package:app/ui/widgets/your_cart/item_cart_widget.dart';
@@ -15,11 +14,8 @@ class CartPage extends StatelessWidget {
       return XLayout(
           title: 'Your Cart',
           supTitle: Text(
-            state.totalPrice <= 0.0
-                ? "\$0.00"
-                : "\$${double.parse(state.totalPrice.toStringAsFixed(2))}",
+            state.totalPriceText,
             style: const TextStyle(
-                fontFamily: XFonts.rubik,
                 color: XColors.blackColor,
                 fontSize: 20,
                 fontWeight: FontWeight.bold),
@@ -45,10 +41,10 @@ class CartPage extends StatelessWidget {
       child: const Text(
         "Your cart is empty.",
         style: TextStyle(
-            fontFamily: XFonts.rubik,
-            color: XColors.blackColor,
-            fontSize: 16,
-            fontWeight: FontWeight.normal),
+          color: XColors.blackColor,
+          fontSize: 16,
+          fontWeight: FontWeight.normal,
+        ),
       ),
     );
   }

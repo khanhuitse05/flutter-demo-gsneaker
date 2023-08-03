@@ -1,4 +1,3 @@
-import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:app/utils/colors.dart';
 import 'package:app/utils/images.dart';
@@ -45,7 +44,6 @@ class XAppbar extends StatelessWidget {
               Text(
                 title,
                 style: const TextStyle(
-                  fontFamily: XFonts.rubik,
                   color: XColors.blackColor,
                   fontSize: 24,
                   fontWeight: FontWeight.bold,

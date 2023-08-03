@@ -5,7 +5,6 @@ import 'package:app/ui/widgets/home/add_button.dart';
 import 'package:app/ui/widgets/home/cart_button.dart';
 import 'package:app/ui/widgets/home/item_image.dart';
 import 'package:app/utils/colors.dart';
-import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -60,10 +59,7 @@ class ProductPage extends StatelessWidget {
     return Text(
       "\$$price",
       style: const TextStyle(
-          fontFamily: XFonts.rubik,
-          color: XColors.blackColor,
-          fontSize: 22,
-          fontWeight: FontWeight.bold),
+          color: XColors.blackColor, fontSize: 22, fontWeight: FontWeight.bold),
     );
   }
 

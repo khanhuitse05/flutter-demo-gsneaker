@@ -1,4 +1,3 @@
-import 'package:app/utils/fonts.dart';
 import 'package:flutter/material.dart';
 import 'package:app/utils/colors.dart';
 import 'package:app/utils/images.dart';
@@ -60,7 +59,6 @@ class _AddButtonState extends State<AddButton> {
           maxLines: 1,
           style: TextStyle(
               color: XColors.blackColor,
-              fontFamily: XFonts.rubik,
               fontSize: 14,
               fontWeight: FontWeight.w700),
         ),

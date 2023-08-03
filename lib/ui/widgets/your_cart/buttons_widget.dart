@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
-import 'package:app/utils/images.dart';
 
-Widget iconButton(context,
-    {String? icon, Color? color, Function()? onPressed}) {
-  Size size = MediaQuery.of(context!).size;
-  return SizedBox(
-    width: size.width / 11,
-    height: size.width / 11,
-    child: ElevatedButton(
+class CircleIconButton extends StatelessWidget {
+  const CircleIconButton({super.key, this.icon, this.color, this.onPressed});
+  final String? icon;
+  final Color? color;
+  final Function()? onPressed;
+
+  @override
+  Widget build(BuildContext context) {
+    const double buttonSize = 32;
+    const double iconSize = 16;
+    return IconButton(
       onPressed: onPressed,
-      style: ElevatedButton.styleFrom(
-        backgroundColor: color,
-        elevation: 0,
-        padding: const EdgeInsets.all(0.0),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(size.width),
+      icon: Container(
+        width: buttonSize,
+        height: buttonSize,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          color: color,
+        ),
+        child: Center(
+          child: Image.asset(
+            icon!,
+            width: iconSize,
+          ),
         ),
       ),
-      child: Image.asset(
-        icon!,
-        width: icon == XImages.trashIcon ? size.width / 18 : size.width / 26,
-      ),
-    ),
-  );
+    );
+  }
 }

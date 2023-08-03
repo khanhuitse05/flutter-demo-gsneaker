@@ -1,5 +1,4 @@
 import 'package:app/cubit/cart/cart_cubit.dart';
-import 'package:app/utils/fonts.dart';
 import 'package:app/routers/routers.dart';
 import 'package:flutter/material.dart';
 import 'package:app/model/shoes.dart';
@@ -41,7 +40,6 @@ class ItemCartWidget extends StatelessWidget {
         Text(
           item.name,
           style: const TextStyle(
-              fontFamily: XFonts.rubik,
               color: XColors.blackColor,
               fontSize: 16,
               fontWeight: FontWeight.bold),
@@ -50,7 +48,6 @@ class ItemCartWidget extends StatelessWidget {
         Text(
           "\$${item.price}",
           style: const TextStyle(
-              fontFamily: XFonts.rubik,
               color: XColors.blackColor,
               fontSize: 20,
               fontWeight: FontWeight.bold),
@@ -66,8 +63,7 @@ class ItemCartWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        iconButton(
-          context,
+        CircleIconButton(
           icon: XImages.minusIcon,
           color: Colors.grey.shade300,
           onPressed: () {
@@ -84,8 +80,7 @@ class ItemCartWidget extends StatelessWidget {
                 fontWeight: FontWeight.normal),
           ),
         ),
-        iconButton(
-          context,
+        CircleIconButton(
           icon: XImages.plusIcon,
           color: Colors.grey.shade300,
           onPressed: () {
@@ -93,10 +88,12 @@ class ItemCartWidget extends StatelessWidget {
           },
         ),
         const Spacer(),
-        iconButton(context, icon: XImages.trashIcon, color: XColors.yellowColor,
+        CircleIconButton(
+            icon: XImages.trashIcon,
+            color: XColors.yellowColor,
             onPressed: () {
-          context.read<CartCubit>().updateProduct(item, 0);
-        })
+              context.read<CartCubit>().updateProduct(item, 0);
+            })
       ],
     );
   }

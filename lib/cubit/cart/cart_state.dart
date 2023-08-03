@@ -16,6 +16,12 @@ class CartState {
     return value;
   }
 
+  String get totalPriceText {
+    return totalPrice <= 0.0
+        ? "\$0.00"
+        : "\$${double.parse(totalPrice.toStringAsFixed(2))}";
+  }
+
   CartState copyWith({
     List<Shoes>? data,
   }) {
