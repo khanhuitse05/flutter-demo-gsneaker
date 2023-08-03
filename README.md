@@ -1,29 +1,49 @@
 # G-Sneaker
 
-- https://github.com/GoldenOwlAsia/webdev-intern-assignment
-// TODO: add record screen here
-- [Live Demo]()
+- Watch the video -> Resources/screen-recording.mp4
+
 ![Screenshot](resources/screenshot.jpeg)
 
-# Requirements
-Your application should have at least features in Must have, things in Nice to have is optional (but yeah, it's attractive if you have).
+## Prerequisites
 
+- Flutter 3.10.x
+- Android Studio - [latest version](https://developer.android.com/studio/install?gclid=Cj0KCQjwiIOmBhDjARIsAP6YhSWAACh94FR8rU7TUR5My3O9zfbvsdcwq3MuupLn6QDGX5KUDQAv_l0aAjg1EALw_wcB&gclsrc=aw.ds)
+- MacOS & XCode (for build & debug iOS)
 
-### Must have:
+## How to Use
 
-- Display all products in `Our Products` section (for products data please check from [Technical Requirements](#technical-requirements))
-- User able to click on `Add To Cart` to add target product to their cart.
-- Display all added products in `Your Cart` section:
-- UI must follow correctly design from [live demo](https://golden-shoe-live-example.herokuapp.com).
+**Step 1:** Download or clone this repo by using the link below:
 
-### Nice to have:
+```
+https://github.com/j1mmyto9/flutter-demo-gsneaker.git
+```
 
-- Responsive design (look good on all devices: desktops, tablets & mobile phones).
-- Smooth animations (don't really need to be same as the demo, just do what you think is good).
-- Apply State Management (Provide Or Bloc). And have nice code structure.
+**Step 2:** Install Flutter
 
-# Submission
+- Install the platform-specific SDK [here](https://flutter.dev/docs/get-started/install)
 
-After completing the assignment, please push the source code to remote repository (github/gitlab), then send us the link to your repository.
+**Step 3:** Setup flutter and run locally
+Go to project root and execute the following command in console to get the required dependencies:
 
-Don't forget to add `README.md` which includes guide to run your project and demo link (apk) or video demo.
+```
+flutter pub get
+```
+
+Connect your physical device or open simulator. then run your app
+
+```
+flutter run
+```
+
+# Code Conventions
+
+- [analysis_options.yaml](analysis_options.yaml)
+- [About code analytics flutter](https://medium.com/flutter-community/effective-code-in-your-flutter-app-from-the-beginning-e597444e1273)
+
+  In Flutter, Modularization will be done at a file level. While building widgets, we have to make sure they stay independent and re-usable as maximum. Ideally, widgets should be easily extractable into an independent project.
+
+# Dependencies
+
+## State Management
+
+- [flutter_bloc](https://pub.dev/packages/flutter_bloc) A dart package that helps implement the BLoC pattern. Learn more at [bloclibrary.dev](https://bloclibrary.dev/#/)!
