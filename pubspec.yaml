@@ -5,20 +5,20 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.16.0 <3.0.0"
+  sdk: ">=3.0.0 <3.1.0"
 
 dependencies:
   flutter:
     sdk: flutter
     
-  cupertino_icons: ^1.0.5
-  hexcolor: ^2.0.7
-  shadow: ^1.0.0
-  auto_size_text: ^3.0.0
-  animations: ^2.0.3
-  shared_preferences: ^2.0.15
-  flutter_bloc: ^8.0.1
-  equatable: ^2.0.3
+  cupertino_icons: 
+  hexcolor: 
+  shadow: 
+  auto_size_text: 
+  animations: 
+  shared_preferences: 
+  flutter_bloc:
+  equatable: 
 
 
 dev_dependencies:
